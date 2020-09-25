@@ -19,64 +19,107 @@
     <!-- Styles -->
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
 </head>
-  <body>
+<body>
     <div id="app">
-        <section class="px-3 py-4">
-         <header class="container mx-auto ">
-              <h1>
-                   <img src="/images/logo3.png">
-               </h1>
-               <div class="flex-1">
-                   <ul>
-                       <li><a class="font-bold  text-lg mb-4 block"
-                              href="/"
-                           >Home</a></li>
+        <section class="px-8  py-4 mb-6">
+       <header class="container">
+           <h1 class="ml-32">
+               <img src="/images/image.png">
+           </h1>
+       </header>
+            <div class="lg:flex">
 
-                       <li><a class="font-bold text-lg mb-4 block"
-                              href="/Explorer"
-                           >Explorer</a></li>
+           <div class="flex-6">
 
+           </div>
+                <div class="ml-64">
 
-                       <li><a class="font-bold text-lg mb-4 block"
-                              href="#"
-                           >Notifications</a></li>
+              <div>
 
-                       <li><a class="font-bold text-lg mb-4 block"
-                              href="#"
-                           >Messages</a></li>
-
-                       <li><a class="font-bold text-lg mb-4 block"
-                              href="#"
-                           >Bookmarks</a></li>
-
-                       <li><a class="font-bold text-lg mb-4 block"
-                              href="#"
-                           >Lists</a></li>
-
-                       <li><a class="font-bold text-lg mb-4 block"
-                              href="#"
-                           >Profile</a></li>
+              </div>
 
 
-
-                       <li><a class="font-bold text-lg mb-4 block"
-                              href="#"
-                           >More</a></li>
+                </div>
 
 
-                   </ul>
+                <div class="lg:w-1/6 ">
+
+
+                    <ul>
+                        <li > <a class="font-bold text-lg mb-4 block" href="/" >Home</a></li>
+                        <li > <a class="font-bold text-lg mb-4 block" href="/Explore">Explore</a></li>
+                        <li > <a class="font-bold text-lg mb-4 block" href="#" >Notifications</a></li>
+                        <li > <a class="font-bold text-lg mb-4 block" href="#" >Messages</a></li>
+                        <li > <a class="font-bold text-lg mb-4 block" href="#" >Bookmarks</a></li>
+                        <li > <a class="font-bold text-lg mb-4 block" href="#" >List</a></li>
+                        <li > <a class="font-bold text-lg mb-4 block" href="#" >Profile</a></li>
+                        <li > <a class="font-bold text-lg mb-4 block" href="#" >More</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="lg:flex-1 lg:mx-10">
+                    <div class="border border-blue-400 rounded-lg px-8 py-6">
+                        <form action="">
+                      <textarea
+                          name="body"
+                          class="w-full"
+                          placeholder="Hello tweets ?"
+                          ></textarea>
+
+                            <hr class="my-4">
+
+                            <footer class="flex justify-between">
+
+                                <div class="flex items-center">
+                                <img src="https://i.pravatar.cc/40" class="rounded-circle mr-2 ">
+                               </div>
+                                <button type="submit" class="bg-blue-500 rounded-lg shadow py-2 px-2 text-white" >Tweet-a-room !!</button>
+                            </footer>
+
+                        </form>
+
+                    </div>
+
+                    <div></div>
+
+
+                </div>
+                  <div class="lg:w-1/6">
+                      <h3 class="font-bold text-xl mb-4 block"> Friends</h3>
+                        <ul>
+                        @foreach (range(1,8) as $index)
+                          <li class="nb-4">
+                            <div class="flex items-center">
+                             <img src="https://i.pravatar.cc/40px" class="rounded-circle mr-6 text-sm"> Lucky fire
+
+                       </div>
+                           </li>
+                        @endforeach
+
+                        </ul>
 
 
 
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </section>
 
         <section class="px-3 py-4">
 
             <main class="container mx-auto">
 
+
             </main>
-
-
-       </body>
-</section>
-
+        </section>
+    </div>
+</body>
 </html>

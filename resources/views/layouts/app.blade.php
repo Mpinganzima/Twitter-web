@@ -19,23 +19,64 @@
     <!-- Styles -->
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
 </head>
-<body>
+  <body>
     <div id="app">
-        <section class="px-8">
+        <section class="px-3 py-4">
+         <header class="container mx-auto ">
+              <h1>
+                   <img src="/images/logo3.png">
+               </h1>
+               <div class="flex-1">
+                   <ul>
+                       <li><a class="font-bold  text-lg mb-4 block"
+                              href="/"
+                           >Home</a></li>
 
-       <header>
-           <h1>tweety</h1>
-       </header>
-        </section>
-
-        <section class="px-8">
-
-        </section>
+                       <li><a class="font-bold text-lg mb-4 block"
+                              href="/Explorer"
+                           >Explorer</a></li>
 
 
-        <main class="py-4">
-            @yield('content')
-        </main>
-    </div>
-</body>
+                       <li><a class="font-bold text-lg mb-4 block"
+                              href="#"
+                           >Notifications</a></li>
+
+                       <li><a class="font-bold text-lg mb-4 block"
+                              href="#"
+                           >Messages</a></li>
+
+                       <li><a class="font-bold text-lg mb-4 block"
+                              href="#"
+                           >Bookmarks</a></li>
+
+                       <li><a class="font-bold text-lg mb-4 block"
+                              href="#"
+                           >Lists</a></li>
+
+                       <li><a class="font-bold text-lg mb-4 block"
+                              href="#"
+                           >Profile</a></li>
+
+
+
+                       <li><a class="font-bold text-lg mb-4 block"
+                              href="#"
+                           >More</a></li>
+
+
+                   </ul>
+
+
+
+
+        <section class="px-3 py-4">
+
+            <main class="container mx-auto">
+
+            </main>
+
+
+       </body>
+</section>
+
 </html>

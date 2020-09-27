@@ -14,11 +14,40 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route:: get('/test', function(){
+//Route:: get('/test', function(){
+//
+//    return ('welcome');
+//});
 
-    return ('welcome');
+
+//Route:: get('/', function(){
+//
+////    return  view('pages');
+//    return('hello ');
+//});
+
+
+//Route:: get('/hello', function(){
+//
+////    return  view('pages');
+//    return('hello world ');
+//});
+
+//Route:: get('/Home', function(){
+//
+//    return  view('pages.Home');
+//
+//});
+Route:: get('/about', function() {
+
+    return view('pages.about');
+
 });
+Route:: get('/home', function() {
 
+    return view('pages.home');
+
+});
 
 
 Auth::routes();
